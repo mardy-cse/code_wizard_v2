@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'forgot_pass.dart';
 import 'register_screen.dart';
 import 'home_screen.dart';
 class loginScreen extends StatefulWidget {
@@ -121,7 +122,9 @@ class _loginScreenState extends State<loginScreen> {
                               letterSpacing: 3,
                             ),)),
                       ),
-                      TextButton(onPressed: (){}, child: Text('Forgotten password?')),
+                      TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgotPass()));
+                      }, child: Text('Forgotten password?')),
                       SizedBox(
                         height: 70,
                       ),
