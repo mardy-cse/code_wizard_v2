@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "908785869235",
+    "project_id": "code-wizard-932a2",
+    "storage_bucket": "code-wizard-932a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908785869235:android:748541be82541f65e3ebc6",
+        "android_client_info": {
+          "package_name": "com.example.code_wizard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908785869235-fsca943sngd7j1dfvq23rk5cj4mn61s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhfhTTd630ru1s8S0j_jLsT5oInNhoGt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908785869235-fsca943sngd7j1dfvq23rk5cj4mn61s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
