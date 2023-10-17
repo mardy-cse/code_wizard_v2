@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'c_pro.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,10 +16,11 @@ class HomeScreen extends StatelessWidget {
                   color: Colors.blueGrey,
                 ),
                 child: Text(
-                  'Code Wizaed',
+                  'CODE WIZARD',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,
+                    letterSpacing: 2
 
                   ),
                 ),

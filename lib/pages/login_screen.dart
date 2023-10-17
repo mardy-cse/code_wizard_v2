@@ -140,7 +140,9 @@ class _loginScreenState extends State<loginScreen> {
                             child: Text('Create new account', style: TextStyle(
                               color: Colors.white,
                               letterSpacing: 3,
-                            ),)),
+                            ),
+                            ),
+                        ),
                       ),
                     ],
                 ),

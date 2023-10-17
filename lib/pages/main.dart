@@ -18,7 +18,7 @@ class codeWizard extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: splashScreen(),
+      home: splashScreen(),  //
     );
   }
 }

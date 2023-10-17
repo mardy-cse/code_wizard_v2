@@ -71,7 +71,7 @@ class C_Prog extends StatelessWidget {
                       width: double.infinity,
                       decoration: BoxDecoration(
                           border: Border.all(width: 2),
-                          borderRadius: BorderRadius.circular(10)
+                          borderRadius: BorderRadius.circular(10),
                       ),
                       child: TextButton(onPressed: (){
                         Navigator.push(context,

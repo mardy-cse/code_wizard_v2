@@ -1,10 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 class ForgotPass extends StatefulWidget {
   const ForgotPass({super.key});
-
   @override
   State<ForgotPass> createState() => _ForgotPassState();
 }
@@ -28,15 +26,12 @@ class _ForgotPassState extends State<ForgotPass> {
           ),
           SizedBox(height: 40,),
           ElevatedButton(onPressed: (){
-
             auth.sendPasswordResetEmail(email: emailController.text.toString()).then((value){
-
             }).onError((error, stackTrace){
-
             });
           }, child: Text("Reset Pass"))
         ],
-      )
+      ),
     );
   }
 }
