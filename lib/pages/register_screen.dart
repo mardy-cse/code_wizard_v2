@@ -88,7 +88,7 @@ class _registerState extends State<register> {
                       },
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 60,
                     ),
                     SizedBox(
                       height: 45,
@@ -114,24 +114,10 @@ class _registerState extends State<register> {
                           print(e);
                         }
                       },
-                          child: Text('Sign Up', style: TextStyle(
-                            color: Colors.white,
-                            letterSpacing: 3,
-                          ),)),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    SizedBox(
-                      height: 45,
-                      width: 140,
-                      child: ElevatedButton(onPressed: (){
-                        Navigator.pop(context);
-                      },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blueGrey,
                           ),
-                          child: Text('Back', style: TextStyle(
+                          child: Text('Sign Up', style: TextStyle(
                             color: Colors.white,
                             letterSpacing: 3,
                           ),)),

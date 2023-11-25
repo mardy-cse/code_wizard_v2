@@ -32,19 +32,6 @@ class _C_IntroState extends State<C_Intro> {
             decoration: BoxDecoration(
               color: Colors.white70,
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(onPressed: (){
-                },
-                    child: Text("Docs")),
-                ElevatedButton(onPressed: (){},
-                    child: Text("Video")),
-                ElevatedButton(onPressed: (){},
-                    child: Text("Code")),
-
-              ],
-            ),
           ),
         ],
       )

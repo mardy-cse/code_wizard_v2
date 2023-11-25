@@ -36,7 +36,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        border: Border.all(width: 2),
+                        border: Border.all(width: 1),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: TextButton(onPressed: (){
@@ -53,7 +53,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){
@@ -70,7 +70,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10),
                       ),
                       child: TextButton(onPressed: (){
@@ -87,7 +87,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -101,7 +101,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -115,7 +115,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -129,7 +129,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -143,7 +143,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -157,7 +157,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -171,7 +171,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -186,7 +186,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -200,7 +200,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -214,7 +214,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -228,7 +228,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -242,7 +242,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -256,7 +256,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -270,7 +270,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -284,7 +284,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},
@@ -298,7 +298,7 @@ class C_Prog extends StatelessWidget {
                       height: 75,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          border: Border.all(width: 2),
+                          border: Border.all(width: 1),
                           borderRadius: BorderRadius.circular(10)
                       ),
                       child: TextButton(onPressed: (){},

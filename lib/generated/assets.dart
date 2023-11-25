@@ -5,8 +5,21 @@ class Assets {
   static const String assetsAnimationLma3hgi7 = 'assets/animation_lma3hgi7.json';
   static const String assetsCprogramming = 'assets/cprogramming.pdf';
   static const String assetsLogin = 'assets/login.png';
+  static const String assetsNextpic = 'assets/nextpic.png';
+  static const String assetsNextscreen = 'assets/nextscreen.json';
   static const String assetsRegister = 'assets/register.png';
   static const String assetsSplashScreen = 'assets/SplashScreen.png';
+  static const String assetsSplashScreen2 = 'assets/SplashScreen2.png';
   static const String assetsText = 'assets/text.pdf';
+  static const String imagesCpp = 'assets/images/cpp.png';
+  static const String imagesCprog = 'assets/images/Cprog.png';
+  static const String imagesCss = 'assets/images/css.png';
+  static const String imagesHtml = 'assets/images/html.png';
+  static const String imagesJava = 'assets/images/java.png';
+  static const String imagesJavascript = 'assets/images/javascript.png';
+  static const String imagesKotlin = 'assets/images/kotlin.png';
+  static const String imagesPhp = 'assets/images/php.png';
+  static const String imagesPython = 'assets/images/python.png';
+  static const String imagesSqlite = 'assets/images/sqlite.png';
 
 }

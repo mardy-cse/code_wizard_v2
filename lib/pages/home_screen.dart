@@ -1,3 +1,4 @@
+import 'package:code_wizard/pages/colors.dart';
 import 'package:flutter/material.dart';
 import 'c_pro.dart';
 
@@ -13,12 +14,12 @@ class HomeScreen extends StatelessWidget {
             children: const <Widget>[
               DrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.blueGrey,
+                  color: Colors.white38
                 ),
                 child: Text(
-                  'CODE WIZARD',
+                  'Bal WIZARD',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blue,
                     fontSize: 30,
                     letterSpacing: 2
 
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       appBar: AppBar(
-        title: Text("CODE WIZARD"),
+        title: const Text("CODE WIZARD"),
         centerTitle: true,
       ),
       backgroundColor: Colors.blueGrey,
@@ -54,7 +55,7 @@ class HomeScreen extends StatelessWidget {
         children: [
 
           Container(
-            margin: EdgeInsets.only(top: 10,left: 10, right: 10),
+            margin: const EdgeInsets.only(top: 10,left: 10, right: 10),
             child: SingleChildScrollView(
               child: Column(
                 children: [
@@ -71,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const C_Prog())),
                       child: const Text('C Programming'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -89,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('C++ Programming'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -107,7 +108,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('Java'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -125,7 +126,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('JavaScript'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -143,7 +144,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('Python'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -161,7 +162,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('Ruby'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -179,7 +180,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('Dart'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -197,7 +198,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('C#'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -215,7 +216,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('HTML'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -233,7 +234,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('CSS'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -251,7 +252,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('C Programming'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),
@@ -269,7 +270,7 @@ class HomeScreen extends StatelessWidget {
                           .push(MaterialPageRoute(builder: (context) => const HomeScreen())),
                       child: const Text('C Programming'),
                       style: TextButton.styleFrom(
-                          primary: Colors.black,
+                          backgroundColor: Colors.black,
                           textStyle:
                           const TextStyle(fontSize: 24)),
                     ),

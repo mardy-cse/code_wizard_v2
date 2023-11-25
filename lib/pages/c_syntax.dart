@@ -7,7 +7,7 @@ class C_Syntax extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Introduction"),
+        title: Text("Syntax"),
       ),
         backgroundColor: Colors.white,
       body:Stack(
@@ -24,19 +24,6 @@ class C_Syntax extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               color: Colors.white70,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(onPressed: (){
-                },
-                    child: Text("Docs")),
-                ElevatedButton(onPressed: (){},
-                    child: Text("Video")),
-                ElevatedButton(onPressed: (){},
-                    child: Text("Code")),
-
-              ],
             ),
           ),
         ],

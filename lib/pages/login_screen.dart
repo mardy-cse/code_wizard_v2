@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'bottomNavbar.dart';
 import 'forgot_pass.dart';
 import 'register_screen.dart';
-import 'home_screen.dart';
+
 class loginScreen extends StatefulWidget {
   @override
   State<loginScreen> createState() => _loginScreenState();
@@ -86,19 +87,20 @@ class _loginScreenState extends State<loginScreen> {
                         },
                       ),
                       SizedBox(
-                        height: 40,
+                        height: 55,
                       ),
                       SizedBox(
-                        height: 45,
+                        height: 47,
                         width: 140,
                         child: ElevatedButton(onPressed: ()async{
+
                           FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: pass)
                               .then((value) {
                             if(formKey.currentState!.validate()){
                               print("Successfull");
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => HomeScreen()),
+                                MaterialPageRoute(builder: (context) => BottomNavBar()),
                               );
                             }else{
                               print('Unsuccessful');
@@ -117,6 +119,9 @@ class _loginScreenState extends State<loginScreen> {
                             }
                           }
                         },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xfff3a434d),
+                            ),
                             child: Text('Sign In', style: TextStyle(
                               color: Colors.white,
                               letterSpacing: 3,
@@ -124,13 +129,15 @@ class _loginScreenState extends State<loginScreen> {
                       ),
                       TextButton(onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgotPass()));
-                      }, child: Text('Forgotten password?')),
+                      }, child: Text('Forgotten password?', style: TextStyle(
+                        fontSize: 15
+                      ),)),
                       SizedBox(
-                        height: 70,
+                        height: 20,
                       ),
                       SizedBox(
                         height: 50,
-                        width: 220,
+                        width: 240,
                         child: ElevatedButton(onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context)=> register()));
                         },

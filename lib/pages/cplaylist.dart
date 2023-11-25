@@ -35,7 +35,7 @@ class _youtubeState extends State<youtube> {
   Widget build(BuildContext context) {
     return  Scaffold(
         appBar: AppBar(
-          title: const Text('Video Tutorial',
+          title: const Text('C Programming',
             style: TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.bold,
@@ -66,7 +66,6 @@ class _youtubeState extends State<youtube> {
             YoutubePlayer(controller: _Csintax,
               showVideoProgressIndicator: true,
             )
-
           ],
         )
     );

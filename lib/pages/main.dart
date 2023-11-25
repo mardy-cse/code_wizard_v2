@@ -1,6 +1,9 @@
+import 'package:code_wizard/pages/colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'bottomNavbar.dart';
 import 'splash_screen.dart';
+import 'home_design.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,9 +19,12 @@ class codeWizard extends StatelessWidget {
       title: "Programming Language Learning App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: primary,
       ),
-      home: splashScreen(),  //
+      //HomeDesign(),
+      //splashScreen(),
+      //HomeScreen(),
+      home: splashScreen(),
     );
   }
 }

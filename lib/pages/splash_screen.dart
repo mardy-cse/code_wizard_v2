@@ -1,29 +1,33 @@
-import 'dart:async';
-import 'login_screen.dart';
+import 'package:code_wizard/pages/splash_services.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 class splashScreen extends StatefulWidget{
   @override
   State<splashScreen> createState() => _splashScreenState();
+
+  static void isLogin(BuildContext context) {}
 }
 
 class _splashScreenState extends State<splashScreen> {
+  //splashScreen _SplashScreenState = SplashServices();
+  SplashServices splashScreen = SplashServices();
+
   @override
+
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
-      Navigator.pushReplacement(context,
-      MaterialPageRoute(builder: (context)=> loginScreen())
-      );
-    });
+    splashScreen.isLogin(context);
   }
+
+
+
   @override
   Widget build(BuildContext context){
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/SplashScreen.png'),
-          fit: BoxFit.cover
+            image: AssetImage('assets/SplashScreen.png'),
+            fit: BoxFit.cover
         ),
       ),
       child: Scaffold(
