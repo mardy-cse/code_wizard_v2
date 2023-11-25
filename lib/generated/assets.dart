@@ -36,7 +36,11 @@ class Assets {
   static const String iconsIcons8RustProgrammingLanguage96 = 'assets/icons/icons8-rust-programming-language-96.png';
   static const String iconsIcons8Swift96 = 'assets/icons/icons8-swift-96.png';
   static const String iconsIcons8Wordpress96 = 'assets/icons/icons8-wordpress-96.png';
+  static const String iconsLogo = 'assets/icons/Logo.png';
+  static const String iconsLogout = 'assets/icons/logout.png';
+  static const String iconsPerson = 'assets/icons/person.png';
   static const String iconsSetting = 'assets/icons/setting.png';
+  static const String iconsShare = 'assets/icons/share.png';
   static const String iconsStar = 'assets/icons/star.png';
 
 }

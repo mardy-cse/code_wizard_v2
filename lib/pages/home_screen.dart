@@ -26,15 +26,31 @@ class HomeScreen extends StatelessWidget {
               Container(
                 height: height*0.3,
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                border: Border(
+                bottom: BorderSide(
+                  width: 0.5,
                 ),
               ),
-              _buildDrawer(context,'assets/icons/setting.png','Setting'),
+                ),
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Container(
+                        margin: EdgeInsets.all(20),
+                        height: height*0.1,
+                        width: width*0.4,
+                        child: Image.asset('assets/icons/Logo.png'),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              _buildDrawer(context,'assets/icons/person.png','Profile'),
               _buildDrawer(context,'assets/icons/setting.png','Setting'),
               _buildDrawer(context,'assets/icons/star.png','Rate Us'),
-              _buildDrawer(context,'assets/icons/setting.png','Setting'),
-              _buildDrawer(context,'assets/icons/setting.png','Setting'),
-              _buildDrawer(context,'assets/icons/star.png','Rate Us'),
+              _buildDrawer(context,'assets/icons/share.png','Share'),
+              _buildDrawer(context,'assets/icons/logout.png','Log Out'),
             ],
           ),
         ),
@@ -156,7 +172,7 @@ class HomeScreen extends StatelessWidget {
 
 Widget _buildPopularCourses(BuildContext context, String path, String text){
   return Container(
-    width: MediaQuery.of(context).size.width*0.22,
+    width: MediaQuery.of(context).size.width*0.25,
     child: Column(
       children: [
         Container(
@@ -177,8 +193,13 @@ Widget _buildPopularCourses(BuildContext context, String path, String text){
 
 Widget _buildAllCourses(BuildContext context, String path, String text){
   return Container(
-    margin: EdgeInsets.only(bottom: MediaQuery.of(context).size.height*0.015,),
+    margin: EdgeInsets.only(
+      bottom: MediaQuery.of(context).size.height*0.015,
+      left: MediaQuery.of(context).size.height*0.015,
+      right: MediaQuery.of(context).size.height*0.015,
+    ),
     height: MediaQuery.of(context).size.height*0.11,
+    width: MediaQuery.of(context).size.width*1,
     decoration: BoxDecoration(
       color: Colors.white,
       border: Border.all(
@@ -203,7 +224,7 @@ Widget _buildAllCourses(BuildContext context, String path, String text){
           width: 3,
         ),
         Container(
-          width: MediaQuery.of(context).size.width* 0.64,
+          width: MediaQuery.of(context).size.width* 0.60,
           child: Text(text,
             style: TextStyle(
               fontSize: 25,
@@ -242,7 +263,7 @@ Widget _buildDrawer(BuildContext context, String path, String text){
                     fontFamily: 'Poppins',
                   fontSize: 17
                 ),)),
-              )
+              ),
             ],
           ),
         ),
