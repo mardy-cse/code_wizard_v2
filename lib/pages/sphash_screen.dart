@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import '../bottom_navbar.dart';
+
+
+
+import 'package:code_wizard_v1/auth/login_screen.dart';
 
 
 class Splash_Screen extends StatefulWidget {
@@ -16,7 +19,10 @@ class _Splash_ScreenState extends State<Splash_Screen> {
 
     Timer(Duration(seconds: 4), () {
       Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context)=> BottomNavBar())
+
+          MaterialPageRoute(builder: (context)=> loginScreen())
+
+
       );
     });
   }

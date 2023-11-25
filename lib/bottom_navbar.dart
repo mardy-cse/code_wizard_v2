@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'pages/compiler/compiler.dart';
 import 'pages/home_screen.dart';
-import 'pages/videos/videos.dart';gi
+import 'pages/videos/videos.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -12,6 +13,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   List pages = [
     HomeScreen(),
     Videos(),
+    Compiler(),
   ];
   int currentIndex = 0;
   void onTap(int index){
@@ -36,6 +38,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.video_collection), label: 'Videos'),
+          BottomNavigationBarItem(icon: Icon(Icons.code), label: 'Compiler'),
         ],
       ),
     );
