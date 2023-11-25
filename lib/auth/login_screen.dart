@@ -5,17 +5,23 @@ import 'register_screen.dart';
 import 'forgot_pass.dart';
 import 'package:code_wizard_v1/pages/home_screen.dart';
 class loginScreen extends StatefulWidget {
+
   @override
   State<loginScreen> createState() => _loginScreenState();
 }
 
 class _loginScreenState extends State<loginScreen> {
+  var size, height, width;
   final formKey = GlobalKey<FormState>();
   String email ="",pass="";
   bool _obscureText = true;
 
   @override
   Widget build(BuildContext context) {
+    size = MediaQuery.of(context).size;
+    height=size.height;
+    width=size.width;
+
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
     return Container(
       decoration: BoxDecoration(
@@ -31,9 +37,9 @@ class _loginScreenState extends State<loginScreen> {
         body: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 150, left: 25),
+              padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height*0.2, left: MediaQuery.of(context).size.width*0.08,),
               child: Text('Welcome \nTo CodeWizard', style: TextStyle(
-                fontSize: 40,
+                fontSize: 35,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),),
@@ -97,8 +103,8 @@ class _loginScreenState extends State<loginScreen> {
                       ),
                       SizedBox(height: 40,),
                       SizedBox(
-                        height: 45,
-                        width: 90,
+                        height: MediaQuery.of(context).size.height*0.05,
+                        width: MediaQuery.of(context).size.width*0.25,
                         child: ElevatedButton(onPressed: ()async{
                           FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: pass)
                               .then((value) {
@@ -135,8 +141,8 @@ class _loginScreenState extends State<loginScreen> {
                       }, child: Text('Forget password?')),
                       SizedBox(height: 20,),
                       SizedBox(
-                        height: 50,
-                        width: 160,
+                        height: MediaQuery.of(context).size.height*0.05,
+                        width: MediaQuery.of(context).size.width*0.45,
                         child: ElevatedButton(onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context)=> register()));
                         },

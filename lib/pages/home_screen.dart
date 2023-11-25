@@ -159,7 +159,8 @@ class HomeScreen extends StatelessWidget {
                           child: _buildAllCourses(context,'assets/icons/icons8-swift-96.png','Swift')),
                       InkWell(
                           onTap: (){},
-                          child: _buildAllCourses(context,'assets/icons/icons8-wordpress-96.png','Wordpress')),
+                          child: _buildAllCourses(context,'assets/icons/icons8-wordpress-96.png','Wordpress')
+                      ),
                     ],
                   ),
                 ),

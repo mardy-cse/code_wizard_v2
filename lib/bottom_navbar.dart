@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/compiler/compiler.dart';
 import 'pages/home_screen.dart';
 import 'pages/videos/videos.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -10,6 +11,7 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
+  final websiteUri = Uri.parse('https://www.programiz.com/c-programming/online-compiler/');
   List pages = [
     HomeScreen(),
     Videos(),
@@ -19,6 +21,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
   void onTap(int index){
     setState(() {
       currentIndex = index;
+      if (currentIndex == 2){
+        launchUrl(
+          websiteUri,
+          mode: LaunchMode.inAppWebView,
+        );
+      }
     });
   }
 

@@ -1,11 +1,7 @@
 import 'dart:async';
+import 'package:code_wizard_v1/auth/route.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
-
-
-import 'package:code_wizard_v1/auth/login_screen.dart';
-
 
 class Splash_Screen extends StatefulWidget {
   @override
@@ -20,7 +16,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
     Timer(Duration(seconds: 4), () {
       Navigator.pushReplacement(context,
 
-          MaterialPageRoute(builder: (context)=> loginScreen())
+          MaterialPageRoute(builder: (context)=> route())
 
 
       );
