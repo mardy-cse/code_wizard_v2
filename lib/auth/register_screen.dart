@@ -10,6 +10,8 @@ class register extends StatefulWidget {
 class _registerState extends State<register> {
   var email ='', pass='';
   final formKey = GlobalKey<FormState>();
+  bool _obscureText = false;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,9 +26,9 @@ class _registerState extends State<register> {
         body: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 175, left: 33),
+              padding: const EdgeInsets.only(top: 150, left: 33),
               child: Text('Create \nNew Account', style: TextStyle(
-                fontSize: 33,
+                fontSize: 40,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),),
@@ -34,7 +36,7 @@ class _registerState extends State<register> {
             SingleChildScrollView(
               child: Container(
                 margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height*0.5,
+                  top: MediaQuery.of(context).size.height*0.4,
                   left: 35,
                   right: 35,
                 ),
@@ -62,18 +64,27 @@ class _registerState extends State<register> {
                         }
                       },
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
+                    SizedBox(height: 20,),
+
                     TextFormField(
                       onChanged: (value) {
                         pass = value;
                       },
-                      obscureText: true,
+
                       decoration: InputDecoration(
                         labelText: "Password",
                         fillColor: Colors.grey.shade100,
                         filled: true,
+                        // suffix: GestureDetector(onTap: (){
+                        //   setState(() {
+                        //    _obscureText = !_obscureText;
+                        //   });
+                        // },
+                        //   child: Icon(_obscureText ?
+                        //   Icons.visibility_off : Icons.visibility,
+                        //     //size: 20,
+                        //   ),
+                        // ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
@@ -88,12 +99,10 @@ class _registerState extends State<register> {
                       onSaved: (value){
                       },
                     ),
-                    SizedBox(
-                      height: 40,
-                    ),
+                    SizedBox(height: 50,),
                     SizedBox(
                       height: 45,
-                      width: 140,
+                      width: 95,
                       child: ElevatedButton(onPressed: ()async{
                         if (formKey.currentState!.validate()) {
                           Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
@@ -117,26 +126,26 @@ class _registerState extends State<register> {
                       },
                           child: Text('Sign Up', style: TextStyle(
                             color: Colors.white,
-                            letterSpacing: 3,
+                            letterSpacing: 2,
                           ),)),
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    SizedBox(
-                      height: 45,
-                      width: 140,
-                      child: ElevatedButton(onPressed: (){
-                        Navigator.pop(context);
-                      },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blueGrey,
-                          ),
-                          child: Text('Back', style: TextStyle(
-                            color: Colors.white,
-                            letterSpacing: 3,
-                          ),)),
-                    ),
+                    // SizedBox(
+                    //   height: 30,
+                    // ),
+                    // SizedBox(
+                    //   height: 45,
+                    //   width: 140,
+                    //   child: ElevatedButton(onPressed: (){
+                    //     Navigator.pop(context);
+                    //   },
+                    //       style: ElevatedButton.styleFrom(
+                    //         backgroundColor: Colors.blueGrey,
+                    //       ),
+                    //       child: Text('Back', style: TextStyle(
+                    //         color: Colors.white,
+                    //         letterSpacing: 3,
+                    //       ),)),
+                    // ),
                   ],
                 ),
               ),

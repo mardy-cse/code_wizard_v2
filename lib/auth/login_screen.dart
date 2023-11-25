@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'register_screen.dart';
+import 'forgot_pass.dart';
 import 'package:code_wizard_v1/pages/home_screen.dart';
 class loginScreen extends StatefulWidget {
   @override
@@ -10,6 +11,7 @@ class loginScreen extends StatefulWidget {
 class _loginScreenState extends State<loginScreen> {
   final formKey = GlobalKey<FormState>();
   String email ="",pass="";
+  bool _obscureText = true;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +30,9 @@ class _loginScreenState extends State<loginScreen> {
         body: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 175, left: 33),
-              child: Text('Welcome \nBack', style: TextStyle(
-                fontSize: 33,
+              padding: const EdgeInsets.only(top: 150, left: 25),
+              child: Text('Welcome \nTo CodeWizard', style: TextStyle(
+                fontSize: 40,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),),
@@ -52,7 +54,7 @@ class _loginScreenState extends State<loginScreen> {
                           email=value;
                         },
                         decoration: InputDecoration(
-                          labelText: "Email",
+                          labelText: "E-mail",
                           fillColor: Colors.grey.shade100,
                           filled: true,
                           border: OutlineInputBorder(
@@ -60,18 +62,26 @@ class _loginScreenState extends State<loginScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: 30,
-                      ),
+                      SizedBox(height: 30,),
                       TextFormField(
                         onChanged: (value){
                           pass=value;
                         },
-                        obscureText: true,
+                        obscureText: _obscureText,
                         decoration: InputDecoration(
                           labelText: "Password",
                           fillColor: Colors.grey.shade100,
                           filled: true,
+                          suffix: GestureDetector(onTap: (){
+                            setState(() {
+                              _obscureText = !_obscureText;
+                            });
+                          },
+                            child: Icon(_obscureText ?
+                            Icons.visibility_off : Icons.visibility,
+                            size: 20,
+                            color: Colors.blue),
+                          ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -84,12 +94,10 @@ class _loginScreenState extends State<loginScreen> {
                           }
                         },
                       ),
-                      SizedBox(
-                        height: 40,
-                      ),
+                      SizedBox(height: 40,),
                       SizedBox(
                         height: 45,
-                        width: 140,
+                        width: 90,
                         child: ElevatedButton(onPressed: ()async{
                           FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: pass)
                               .then((value) {
@@ -118,25 +126,25 @@ class _loginScreenState extends State<loginScreen> {
                         },
                             child: Text('Sign In', style: TextStyle(
                               color: Colors.white,
-                              letterSpacing: 3,
+                              letterSpacing: 2,
                             ),)),
                       ),
-                      TextButton(onPressed: (){}, child: Text('Forgotten password?')),
-                      SizedBox(
-                        height: 70,
-                      ),
+                      TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgotPass()));
+                      }, child: Text('Forget password?')),
+                      SizedBox(height: 20,),
                       SizedBox(
                         height: 50,
-                        width: 220,
+                        width: 160,
                         child: ElevatedButton(onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context)=> register()));
                         },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.green,
                             ),
-                            child: Text('Create new account', style: TextStyle(
+                            child: Text('Create Account', style: TextStyle(
                               color: Colors.white,
-                              letterSpacing: 3,
+                              letterSpacing: 2,
                             ),)),
                       ),
                     ],
