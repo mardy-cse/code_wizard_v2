@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463260634986",
+    "project_id": "gitauth-6ef32",
+    "storage_bucket": "gitauth-6ef32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463260634986:android:d5fea4d0edb7a41ca5df13",
+        "android_client_info": {
+          "package_name": "com.example.code_wizard_v1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB237U5HpZO6i8FAkbgV9nNM3HAg8G4kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
