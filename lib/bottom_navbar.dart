@@ -22,11 +22,20 @@ class _BottomNavBarState extends State<BottomNavBar> {
     setState(() {
       currentIndex = index;
       if (currentIndex == 2){
+<<<<<<< Updated upstream
         launchUrl(
+=======
+         launchUrl(
+>>>>>>> Stashed changes
           websiteUri,
           mode: LaunchMode.inAppWebView,
         );
       }
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
     });
   }
 

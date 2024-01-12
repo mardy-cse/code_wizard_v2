@@ -1,4 +1,9 @@
 import 'package:code_wizard_v1/pages/videos/c++playlist.dart';
+<<<<<<< Updated upstream
+=======
+import 'package:code_wizard_v1/pages/videos/java.dart';
+import 'package:code_wizard_v1/pages/videos/pyrhon.dart';
+>>>>>>> Stashed changes
 import 'package:flutter/material.dart';
 import 'cplaylist.dart';
 
@@ -41,10 +46,23 @@ class Videos extends StatelessWidget {
                           },
                           child: _buildAllCourses(context,'assets/icons/icons8-c-96.png','C++')),
                       InkWell(
+<<<<<<< Updated upstream
                           onTap: (){},
                           child: _buildAllCourses(context,'assets/icons/icons8-java-96.png','Java')),
                       InkWell(
                           onTap: (){},
+=======
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => java()));
+                          },
+                          child: _buildAllCourses(context,'assets/icons/icons8-java-96.png','Java')),
+                      InkWell(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => python()));
+                          },
+>>>>>>> Stashed changes
                           child: _buildAllCourses(context,'assets/icons/icons8-python-96.png','Python')),
                       InkWell(
                           onTap: (){},
