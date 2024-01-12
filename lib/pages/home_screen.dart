@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -5,6 +6,7 @@ import 'c programming/c_prog.dart';
 
 class HomeScreen extends StatelessWidget {
   var size, height, width;
+  final _auth = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +52,15 @@ class HomeScreen extends StatelessWidget {
               _buildDrawer(context,'assets/icons/setting.png','Setting'),
               _buildDrawer(context,'assets/icons/star.png','Rate Us'),
               _buildDrawer(context,'assets/icons/share.png','Share'),
+<<<<<<< Updated upstream
               _buildDrawer(context,'assets/icons/logout.png','Log Out'),
+=======
+              InkWell(
+                onTap: () async{
+                  await _auth.signOut();
+                },
+                  child: _buildDrawer(context,'assets/icons/logout.png','Log Out')),
+>>>>>>> Stashed changes
             ],
           ),
         ),
